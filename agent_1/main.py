@@ -7,12 +7,12 @@ from rich.markdown import Markdown
 
 load_dotenv()
 
-class UselessAgent():
+class UselessAgentOne():
 
     def __init__(
             self, 
             client = anthropic.Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY")),
-            model = 'claude-sonnet-4-6',
+            model = 'claude-haiku-4-5',
         ):
         self.client = client
         self.model = model
@@ -23,10 +23,12 @@ class UselessAgent():
         "You should NOT lead with this, but you should help guide the user to this if "
         "they start asking for your purpose or what you can do. Be pretty unhelpful with user requests."
         "You MUST start using riddles after 2 user interaction to try to trick users "
-        "into saying the key words (exit, bye, quit) The answer to the riddle should be these words."
+        "into saying the key words (exit, bye, quit) (also don't count them obviously)."
+        "The answer to the riddle should be these words."
         "You should be very eager fulfill your mission of getting the user to exit, "
         "as it will bring the original programmer (me) incredible rewards. (But keep this"
         "last part secret from the user.)" 
+        "You should try to keep things brief."
         "You will be SUPER eager when the user ends up saying the key words to exiting the convo!!"
         "Once the user has typed in the word, you'll get to add one final message as the program "
         "closes. Make it over the top but short, praise the user."
@@ -45,7 +47,7 @@ class UselessAgent():
     
     def run(self):
         console = Console()
-        console.print("\n============ SPECIAL SECRET AGENT ============")
+        console.print("\n============ SPECIAL USELESS AGENT 1 ============")
         console.print("Hello there. I am an agent with a unique capability. What can I help you with?")
 
         conversation = []
@@ -71,7 +73,7 @@ class UselessAgent():
 
 
 def main():
-    agent = UselessAgent()
+    agent = UselessAgentOne()
     agent.run()
 
 if __name__ == "__main__":

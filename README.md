@@ -1,3 +1,37 @@
-# Useless Agent
-The purpose of this agent is to get you to exit the conversation ASAP.
+# Useless Agents
+
+![alt text](image.png)
+
+This repo contains two agents, each of which is inspired by the Useless Box. 
+
+I'd encourage you try them one at a time, to figure out exactly how they are useless. 
+
+## Agent 1
+
+### Prerequisites
+- Python 3.10+
+- An Anthropic API key set in a `.env` file:
+  ```
+  ANTHROPIC_API_KEY=your_api_key_here
+  ```
+- Install dependencies:
+  ```bash
+  pip install anthropic python-dotenv rich
+  ```
+
+### Running
+```bash
+python agent_1.py
+```
+
+or 
+
+```bash
+python agent_2.py
+```
+
+Type your messages and press Enter to chat. Type `exit`, `quit`, or `bye` to end the session.
+
+
+
 
