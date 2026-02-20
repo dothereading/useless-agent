@@ -2,13 +2,12 @@
 
 ![alt text](image.png)
 
-This repo contains two agents, each of which is inspired by the Useless Box. 
+This repo contains two agents, each of which is inspired by the Useless Box.
 
-I'd encourage you try them one at a time, to figure out exactly how they are useless. 
+I'd encourage you to try them one at a time, to figure out exactly how they are useless.
 
-## Agent 1
+## Prerequisites
 
-### Prerequisites
 - Python 3.10+
 - An Anthropic API key set in a `.env` file:
   ```
@@ -21,14 +20,17 @@ I'd encourage you try them one at a time, to figure out exactly how they are use
 
 ### Running
 ```bash
-python agent_1.py
+python agent_1/main.py
 ```
 
-or 
+or
 
+### Running
 ```bash
-python agent_2.py
+python agent_2/main.py
 ```
+
+---
 
 Type your messages and press Enter to chat. Type `exit`, `quit`, or `bye` to end the session.
 
