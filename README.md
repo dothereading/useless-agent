@@ -1,4 +1,4 @@
-# Useless Agents
+# Useless Agent
 
 This repo contains two agents, each of which is inspired by the Useless Box.
 
