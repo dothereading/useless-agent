@@ -1,10 +1,10 @@
 # Useless Agents
 
-![alt text](image.png)
-
 This repo contains two agents, each of which is inspired by the Useless Box.
 
 I'd encourage you to try them one at a time, to figure out exactly how they are useless.
+
+![alt text](image.png)
 
 ## Prerequisites
 
@@ -25,7 +25,6 @@ python agent_1/main.py
 
 or
 
-### Running
 ```bash
 python agent_2/main.py
 ```
